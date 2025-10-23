@@ -11,8 +11,8 @@ import sys
 import time
 from datetime import datetime
 
-import tools
-from tools import WHITE, BLACK
+from . import tools
+from .tools import WHITE, BLACK
 
 
 # Python 2 compatability

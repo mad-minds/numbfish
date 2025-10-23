@@ -10,11 +10,11 @@ import time
 import logging
 import argparse
 
-import tools
-import numbfish
+from . import tools
+from . import numbfish
 import math
 
-from tools import WHITE, BLACK, Unbuffered
+from .tools import WHITE, BLACK, Unbuffered
 
 PLAY_5min = True
 

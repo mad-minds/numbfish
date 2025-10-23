@@ -3,7 +3,7 @@ import re
 import time
 import sys
 import chess
-import numbfish
+from . import numbfish
 
 ################################################################################
 # This module contains functions used by test.py and xboard.py.

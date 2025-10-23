@@ -1,0 +1,30 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "numbfish"
+version = "0.1.0"
+description = "Mad Minds Inc.'s forked and patched numbfish package from https://github.com/dimdano/numbfish."
+readme = "README.md"
+requires-python = ">=3.12"
+authors = [
+    {name = "André Madeira", email = "mad@madminds.ai"},
+]
+
+dependencies = [
+    "numpy>=1.21.0",
+    "python-chess>=1.11.2",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["."]
+include = [
+    "nnue_data/*",
+    "logo/*",
+    "*.json",
+    "*.bin",
+]
+
+[tool.hatch.build.targets.wheel.sources]
+"." = "numbfish"

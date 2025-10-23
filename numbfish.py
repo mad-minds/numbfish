@@ -5,10 +5,12 @@ from __future__ import print_function
 import re, sys, time
 from itertools import count
 from collections import namedtuple
+import numpy as np
+import chess
 
-import tools
+from . import tools
 
-from nnue_eval import *
+from .nnue_eval import *
 
 ###############################################################################
 # Piece-Square tables. Tune these to change numbfish's behaviour
